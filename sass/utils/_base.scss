@@ -4,15 +4,20 @@ ul {
   padding-left: 0;
   list-style: none;
 }
+li {
+  display: inline;
+}
 a {
   display: inline-block;
   text-decoration: none;
+  color: var(--main-color);
 }
 address {
   font-style: normal;
 }
 body {
   font-family: var(--main-font);
+  font-weight: 400;
   color: var(--main-color);
 
   &.modal-open {
@@ -33,12 +38,16 @@ img {
   @media screen and (min-width: 375px) {
     width: 375px;
   }
-  //   @media screen and (min-width: 768px) {
-  //     width: 768px;
-  //   }
-  //   @media screen and (min-width: 1200px) {
-  //     width: 1200px;
-  //   }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 .section {
   //   padding-top: 60px;
