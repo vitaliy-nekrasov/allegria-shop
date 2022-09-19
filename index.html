@@ -5,40 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allegria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&family=Roboto:wght@300;400;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <nav>
-        <a href="./index.html">
-          <svg></svg>
-        </a>
-        <ul>
-          <li><a href="">жінки</a></li>
-          <li><a href="">чоловіки</a></li>
-        </ul>
-        <form>
-          <label
-            >пошук
-            <input type="text" />
-          </label>
-        </form>
-        <ul>
-          <li><a href="">ua</a></li>
-          <li><a href="">en</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a href=""><svg></svg></a>
-          </li>
-          <li>
-            <a href=""><svg></svg></a>
-          </li>
-          <li>
-            <a href=""><svg></svg></a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <a class="header__logo" href="./index.html">
+            <svg></svg>
+          </a>
+          <div class="header-info">
+            <ul class="header-info__clothing-list">
+              <li class="header-info__clothing-item">
+                <a class="header-info__clothing-link" href="">жінки</a>
+              </li>
+              <li class="header-info__clothing-item">
+                <a class="header-info__clothing-link" href="">чоловіки</a>
+              </li>
+            </ul>
+            <form class="header-form">
+              <label class="header-form__label"
+                >пошук
+                <input class="header-form__input" type="text" />
+              </label>
+            </form>
+            <ul class="header-info__lang-list">
+              <li class="header-info__lang-item">
+                <a class="header-info__lang-link" href="">ua</a>
+              </li>
+              <li class="header-info__lang-item">
+                <a class="header-info__lang-link" href="">en</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="header-icons">
+            <li class="header-icons__item">
+              <a class="header-icons__link" href=""><svg></svg></a>
+            </li>
+            <li class="header-icons__item">
+              <a class="header-icons__link" href=""><svg></svg></a>
+            </li>
+            <li class="header-icons__item">
+              <a class="header-icons__link" href=""><svg></svg></a>
+            </li>
+          </ul>
+          <button class="burger-menu" type="button"><svg></svg></button>
+        </nav>
+      </div>
     </header>
   </body>
 </html>
