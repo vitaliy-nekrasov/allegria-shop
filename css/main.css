@@ -47,4 +47,8 @@ img {
     width: 375px;
   }
 }
+
+.header-info {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
