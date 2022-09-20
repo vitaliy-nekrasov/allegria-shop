@@ -1,0 +1,125 @@
+.slide {
+  height: 460px;
+  background-color: gray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 1440px) {
+    height: 585px;
+  }
+  &--first {
+    background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
+      url('../../images/hero/vintage-mobile@1x.jpg');
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
+        url('../../images/hero/vintage-tablet@1x.png');
+    }
+    @media screen and (min-width: 1440px) {
+      background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
+        url('../../images/hero/vintage-1@1x.jpg'), url(../../images/hero/vintage-2@1x.jpg);
+      background-size: cover, 972px 585px, 469px 585px;
+      background-position: left top, left top, 972px 0px;
+    }
+  }
+  &--second {
+    background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
+      url('../../images/hero/jina@1x.jpg');
+    @media screen and (min-width: 1440px) {
+      background-color: var(--white-back);
+      background-image: url('../../images/hero/jina@1x.jpg');
+      background-size: 941px 585px;
+      background-position: 499px 0px;
+    }
+  }
+  &--third {
+    background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
+      url('../../images/hero/deha@1x.jpg');
+    @media screen and (min-width: 1440px) {
+      background-color: rgb(238, 238, 238);
+      background-image: url('../../images/hero/deha@1x.jpg');
+      background-size: 927px 584px;
+      background-position: 499px 0px;
+    }
+  }
+  &--forth {
+    background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
+      url('../../images/hero/birken-1@1x.jpg');
+    @media screen and (min-width: 1440px) {
+      background-color: var(--white-back);
+      background-image: url(../../images/hero/birken-2@1x.jpg),
+        url('../../images/hero/birken-1@1x.jpg');
+      background-size: 410px 358px, 557px 584px;
+      background-position: 575px 117px, 883px 0px;
+    }
+  }
+}
+.slide__pretitle {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--second-color);
+  padding-top: 166px;
+  margin-bottom: 5px;
+  @media screen and (min-width: 1440px) {
+    &--alt {
+      text-align: left;
+      padding-left: 50px;
+      color: var(--main-color);
+    }
+  }
+}
+.slide__title {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--second-color);
+  margin-bottom: 35px;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: 1440px) {
+    &--alt {
+      text-align: left;
+      padding-left: 50px;
+      color: var(--main-color);
+    }
+  }
+}
+.slide__posttitle {
+  display: block;
+  font-size: 16px;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  color: var(--second-color);
+  @media screen and (min-width: 1440px) {
+    &--alt {
+      text-align: left;
+      padding-left: 50px;
+      color: var(--header-hover);
+    }
+  }
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  background: rgba(0, 0, 0, 0.2);
+  &:not(:last-child) {
+    margin-right: 51px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  color: #eae9e8;
+  background: rgba(0, 0, 0, 0.2);
+}

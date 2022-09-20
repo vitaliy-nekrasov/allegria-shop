@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -82,5 +83,36 @@
         </nav>
       </div>
     </header>
+    <main>
+      <section>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide slide--first">
+              <p class="slide__pretitle">бренд</p>
+              <h2 class="slide__title">american vintage</h2>
+              <a class="slide__posttitle" href="">дивитись колекцію</a>
+            </div>
+            <div class="swiper-slide slide slide--second">
+              <p class="slide__pretitle slide__pretitle--alt">бренд</p>
+              <h2 class="slide__title slide__title--alt">george gina lucy</h2>
+              <a class="slide__posttitle slide__posttitle--alt" href="">дивитись колекцію</a>
+            </div>
+            <div class="swiper-slide slide slide--third">
+              <p class="slide__pretitle slide__pretitle--alt">бренд</p>
+              <h2 class="slide__title slide__title--alt">deha</h2>
+              <a class="slide__posttitle slide__posttitle--alt" href="">дивитись колекцію</a>
+            </div>
+            <div class="swiper-slide slide slide--forth">
+              <p class="slide__pretitle slide__pretitle--alt">бренд</p>
+              <h2 class="slide__title slide__title--alt">birkenstock</h2>
+              <a class="slide__posttitle slide__posttitle--alt" href="">дивитись колекцію</a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
