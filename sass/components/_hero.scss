@@ -6,47 +6,47 @@
   @media screen and (min-width: 1440px) {
     height: 585px;
   }
+
   &--first {
     background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
-      url('../../images/hero/vintage-mobile@1x.jpg');
+      url('../images/hero/vintage-mobile@1x.jpg');
     @media screen and (min-width: 768px) {
       background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
-        url('../../images/hero/vintage-tablet@1x.png');
+        url('../images/hero/vintage-tablet@1x.png');
     }
     @media screen and (min-width: 1440px) {
       background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
-        url('../../images/hero/vintage-1@1x.jpg'), url(../../images/hero/vintage-2@1x.jpg);
+        url('../images/hero/vintage-1@1x.jpg'), url('../images/hero/vintage-2@1x.jpg');
       background-size: cover, 972px 585px, 469px 585px;
       background-position: left top, left top, 972px 0px;
     }
   }
   &--second {
     background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
-      url('../../images/hero/jina@1x.jpg');
+      url('../images/hero/jina@1x.jpg');
     @media screen and (min-width: 1440px) {
       background-color: var(--white-back);
-      background-image: url('../../images/hero/jina@1x.jpg');
+      background-image: url('../images/hero/jina@1x.jpg');
       background-size: 941px 585px;
       background-position: 499px 0px;
     }
   }
   &--third {
     background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
-      url('../../images/hero/deha@1x.jpg');
+      url('../images/hero/deha@1x.jpg');
     @media screen and (min-width: 1440px) {
       background-color: rgb(238, 238, 238);
-      background-image: url('../../images/hero/deha@1x.jpg');
+      background-image: url('../images/hero/deha@1x.jpg');
       background-size: 927px 584px;
       background-position: 499px 0px;
     }
   }
   &--forth {
     background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)),
-      url('../../images/hero/birken-1@1x.jpg');
+      url('../images/hero/birken-1@1x.jpg');
     @media screen and (min-width: 1440px) {
       background-color: var(--white-back);
-      background-image: url(../../images/hero/birken-2@1x.jpg),
-        url('../../images/hero/birken-1@1x.jpg');
+      background-image: url('../images/hero/birken-2@1x.jpg'), url('../images/hero/birken-1@1x.jpg');
       background-size: 410px 358px, 557px 584px;
       background-position: 575px 117px, 883px 0px;
     }

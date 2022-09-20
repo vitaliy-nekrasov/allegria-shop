@@ -321,63 +321,63 @@ img {
 }
 
 .slide--first {
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../../images/hero/vintage-mobile@1x.jpg");
-  background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../../images/hero/vintage-mobile@1x.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../images/hero/vintage-mobile@1x.jpg");
+  background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../images/hero/vintage-mobile@1x.jpg");
 }
 
 @media screen and (min-width: 768px) {
   .slide--first {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../../images/hero/vintage-tablet@1x.png");
-    background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../../images/hero/vintage-tablet@1x.png");
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../images/hero/vintage-tablet@1x.png");
+    background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../images/hero/vintage-tablet@1x.png");
   }
 }
 
 @media screen and (min-width: 1440px) {
   .slide--first {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../../images/hero/vintage-1@1x.jpg"), url(../../images/hero/vintage-2@1x.jpg);
-    background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../../images/hero/vintage-1@1x.jpg"), url(../../images/hero/vintage-2@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../images/hero/vintage-1@1x.jpg"), url("../images/hero/vintage-2@1x.jpg");
+    background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../images/hero/vintage-1@1x.jpg"), url("../images/hero/vintage-2@1x.jpg");
     background-size: cover, 972px 585px, 469px 585px;
     background-position: left top, left top, 972px 0px;
   }
 }
 
 .slide--second {
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../../images/hero/jina@1x.jpg");
-  background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../../images/hero/jina@1x.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../images/hero/jina@1x.jpg");
+  background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../images/hero/jina@1x.jpg");
 }
 
 @media screen and (min-width: 1440px) {
   .slide--second {
     background-color: var(--white-back);
-    background-image: url("../../images/hero/jina@1x.jpg");
+    background-image: url("../images/hero/jina@1x.jpg");
     background-size: 941px 585px;
     background-position: 499px 0px;
   }
 }
 
 .slide--third {
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../../images/hero/deha@1x.jpg");
-  background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../../images/hero/deha@1x.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../images/hero/deha@1x.jpg");
+  background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../images/hero/deha@1x.jpg");
 }
 
 @media screen and (min-width: 1440px) {
   .slide--third {
     background-color: #eeeeee;
-    background-image: url("../../images/hero/deha@1x.jpg");
+    background-image: url("../images/hero/deha@1x.jpg");
     background-size: 927px 584px;
     background-position: 499px 0px;
   }
 }
 
 .slide--forth {
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../../images/hero/birken-1@1x.jpg");
-  background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../../images/hero/birken-1@1x.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-shadow)), to(var(--hero-shadow))), url("../images/hero/birken-1@1x.jpg");
+  background-image: linear-gradient(to right, var(--hero-shadow), var(--hero-shadow)), url("../images/hero/birken-1@1x.jpg");
 }
 
 @media screen and (min-width: 1440px) {
   .slide--forth {
     background-color: var(--white-back);
-    background-image: url(../../images/hero/birken-2@1x.jpg), url("../../images/hero/birken-1@1x.jpg");
+    background-image: url("../images/hero/birken-2@1x.jpg"), url("../images/hero/birken-1@1x.jpg");
     background-size: 410px 358px, 557px 584px;
     background-position: 575px 117px, 883px 0px;
   }
