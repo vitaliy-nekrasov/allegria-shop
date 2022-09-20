@@ -6,6 +6,7 @@
   @media screen and (min-width: 1440px) {
     padding-top: 22px;
     padding-bottom: 22px;
+    position: relative;
   }
 }
 .header-info {
@@ -23,15 +24,15 @@
   text-transform: uppercase;
 }
 .header-info__clothing-item {
-  & --unactive {
-    color: #b7c1c5;
-  }
   &:not(:last-child) {
     margin-right: 45px;
   }
   &:last-child {
     margin-right: 40px;
   }
+}
+.unactive {
+  color: var(--header-unactive);
 }
 
 .header-form {
@@ -40,6 +41,7 @@
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-right: 177px;
 }
 .header-form__label {
   display: flex;
@@ -49,13 +51,47 @@
   margin-left: 20px;
   font-size: 12px;
   padding-bottom: 0;
-  border: 1px solid #0f303f;
+  border: 1px solid var(--main-color);
   border-top: none;
   border-left: none;
   border-right: none;
   width: 150px;
   position: relative;
   top: -5px;
+}
+.header-info__lang-list {
+  font-size: 16px;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-right: 90px;
+}
+.header-info__lang-item {
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+.header-info__lang-link {
+  transition: color 250ms var(--timing);
+  &--active {
+    color: var(--header-hover);
+    &::after {
+      content: '';
+      background: var(--header-hover);
+      border: 2px solid var(--header-hover);
+      position: absolute;
+      bottom: 0;
+      left: 1091px;
+      width: 25px;
+    }
+  }
+  &:hover {
+    color: var(--header-hover);
+  }
+  &:focus {
+    color: var(--header-hover);
+  }
 }
 .header__logo {
   fill: var(--main-color);
@@ -64,7 +100,7 @@
     margin-right: 481px;
   }
   @media screen and (min-width: 1440px) {
-    margin-right: 281px;
+    margin-right: 307px;
     &--svg {
       width: 129px;
       height: 16px;
@@ -73,6 +109,9 @@
 }
 .header-icons {
   margin-right: 27px;
+  @media screen and (min-width: 1440px) {
+    margin-right: 0;
+  }
 }
 .header-icons__item {
   &:not(:last-child) {
@@ -80,14 +119,37 @@
   }
 }
 .header-icons__link {
-  fill: var(--main-color);
+  &--cabinet {
+    fill: var(--main-color);
+    transition: fill 250ms var(--timing);
+    &:hover {
+      fill: var(--header-hover);
+    }
+    &:focus {
+      fill: var(--header-hover);
+    }
+  }
   &--favorites {
     fill: transparent;
     stroke: var(--main-color);
+    transition: stroke 250ms var(--timing);
+    &:hover {
+      stroke: var(--header-hover);
+    }
+    &:focus {
+      stroke: var(--header-hover);
+    }
   }
   &--basket {
     fill: transparent;
     stroke: var(--main-color);
+    transition: stroke 250ms var(--timing);
+    &:hover {
+      stroke: var(--header-hover);
+    }
+    &:focus {
+      stroke: var(--header-hover);
+    }
   }
 }
 .menu-button {
