@@ -84,7 +84,7 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="hero">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide slide--first">
@@ -109,6 +109,54 @@
             </div>
           </div>
           <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="arrivals">
+        <div class="arrivals__new">
+          <img
+            srcset="
+              ./images/new-arrival/img-1@375.jpg   375w,
+              ./images/new-arrival/img-1@640.jpg   640w,
+              ./images/new-arrival/img-1@750.jpg   750w,
+              ./images/new-arrival/img-1@769.jpg   769w,
+              ./images/new-arrival/img-1@1280.jpg 1280w,
+              ./images/new-arrival/img-1@1538.jpg 1538w
+            "
+            src="./images/new-arrival/img-1@640.jpg"
+            alt="Дівчина сидить на стільці"
+            sizes="(min-width: 1440px)640px,(min-width: 768px)769px,375px"
+          />
+          <div class="arrivals__info">
+            <h2 class="arrivals__title">
+              new <br />
+              arrival
+            </h2>
+            <p class="arrivals__text">
+              Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipLorem ipsumLorem ipLorem
+              ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipLorem ipsumLorem ip
+            </p>
+            <a class="arrivals__link" href="">дивитись колекцію</a>
+          </div>
+        </div>
+        <div class="arrivals__block">
+          <div class="arrivals__block--white">
+            <div class="arrivals__block--info">
+              <img
+                srcset="
+                  ./images/new-arrival/img-2@316.jpg 316w,
+                  ./images/new-arrival/img-2@380.jpg 380w,
+                  ./images/new-arrival/img-2@632.jpg 632w,
+                  ./images/new-arrival/img-2@760.jpg 760w
+                "
+                src="./images/new-arrival/img-2@380.jpg"
+                alt="Дівчина у куртці"
+                sizes="(min-width: 1440px)380px,(min-width: 768px)380px,316px"
+              />
+              <p class="arrivals__info--center">
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipLorem ipsumLorem ip
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
