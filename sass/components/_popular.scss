@@ -1,0 +1,146 @@
+.popular__title {
+  font-family: var(--secondary-font);
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 75px;
+  }
+}
+.popular__item {
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 30px;
+  }
+}
+.popular__link {
+  font-family: var(--third-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.44;
+  }
+}
+.popular__section {
+  font-family: var(--third-font);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+.popular__coast {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  color: var(--header-hover);
+  @media screen and (min-width: 1440px) {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+  &--sale {
+    color: var(--sale-color);
+    text-decoration: line-through;
+    margin-right: 4px;
+    @media screen and (min-width: 768px) {
+      margin-right: 6px;
+    }
+  }
+}
+.popular__slide {
+  display: flex;
+  flex-direction: column;
+}
+.popular__img {
+  position: relative;
+  text-align: center;
+  @media screen and (min-width: 1440px) {
+    padding-left: 50px;
+  }
+}
+.swiper-button-next {
+  position: absolute;
+  top: 110px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-back);
+  border-radius: 50%;
+  &::after {
+    content: '';
+  }
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+    right: -25px;
+    top: 150px;
+  }
+  @media screen and (min-width: 1440px) {
+    top: 180px;
+    width: 80px;
+    height: 80px;
+    right: 15px;
+  }
+}
+.button-right {
+  fill: transparent;
+  stroke: var(--main-color);
+  @media screen and (min-width: 768px) {
+    width: 12px;
+    height: 30px;
+  }
+}
+.swiper-button-prev {
+  position: absolute;
+  top: 110px;
+  left: -15px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-back);
+  border-radius: 50%;
+  &::after {
+    content: '';
+  }
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+    left: -25px;
+    top: 150px;
+  }
+  @media screen and (min-width: 1440px) {
+    top: 180px;
+    width: 80px;
+    height: 80px;
+    left: 15px;
+  }
+}
+.button-left {
+  fill: transparent;
+  stroke: var(--main-color);
+  @media screen and (min-width: 768px) {
+    width: 12px;
+    height: 30px;
+  }
+}

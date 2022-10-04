@@ -10,6 +10,7 @@
   --white-back: white;
   --second-color: #eae9e8;
   --arrivals-back: #cec6c4;
+  --sale-color: #cecece;
 }
 
 ul {
@@ -49,10 +50,6 @@ body {
   color: var(--main-color);
 }
 
-body.modal-open {
-  overflow: hidden;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -85,6 +82,25 @@ img {
     width: 1440px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -697,6 +713,216 @@ img {
     width: 800px;
     margin-right: 0;
     margin-left: 0;
+  }
+}
+
+.popular__title {
+  font-family: var(--secondary-font);
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .popular__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .popular__title {
+    margin-bottom: 75px;
+  }
+}
+
+.popular__item {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .popular__item {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .popular__item {
+    margin-bottom: 30px;
+  }
+}
+
+.popular__link {
+  font-family: var(--third-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1440px) {
+  .popular__link {
+    font-size: 18px;
+    line-height: 1.44;
+  }
+}
+
+.popular__section {
+  font-family: var(--third-font);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1440px) {
+  .popular__section {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+.popular__coast {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  color: var(--header-hover);
+}
+
+@media screen and (min-width: 1440px) {
+  .popular__coast {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
+
+.popular__coast--sale {
+  color: var(--sale-color);
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .popular__coast--sale {
+    margin-right: 6px;
+  }
+}
+
+.popular__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popular__img {
+  position: relative;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .popular__img {
+    padding-left: 50px;
+  }
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 110px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-back);
+  border-radius: 50%;
+}
+
+.swiper-button-next::after {
+  content: '';
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-button-next {
+    width: 60px;
+    height: 60px;
+    right: -25px;
+    top: 150px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-button-next {
+    top: 180px;
+    width: 80px;
+    height: 80px;
+    right: 15px;
+  }
+}
+
+.button-right {
+  fill: transparent;
+  stroke: var(--main-color);
+}
+
+@media screen and (min-width: 768px) {
+  .button-right {
+    width: 12px;
+    height: 30px;
+  }
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 110px;
+  left: -15px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-back);
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after {
+  content: '';
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-button-prev {
+    width: 60px;
+    height: 60px;
+    left: -25px;
+    top: 150px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-button-prev {
+    top: 180px;
+    width: 80px;
+    height: 80px;
+    left: 15px;
+  }
+}
+
+.button-left {
+  fill: transparent;
+  stroke: var(--main-color);
+}
+
+@media screen and (min-width: 768px) {
+  .button-left {
+    width: 12px;
+    height: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
