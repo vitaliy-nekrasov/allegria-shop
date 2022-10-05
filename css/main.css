@@ -925,4 +925,8 @@ img {
     height: 30px;
   }
 }
+
+.about-us__img {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
