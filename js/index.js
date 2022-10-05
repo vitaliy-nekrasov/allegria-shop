@@ -15,10 +15,10 @@ var swiper = new Swiper('.mySwiper', {
   },
 });
 
-// OPTIONS FOR POPULAR SECTION SWIPER //
+// POPULAR SECTION SWIPER //
 
-let options = {
-  slidesPerView: null,
+var swiper = new Swiper('.mySwiperPopular', {
+  slidesPerView: 2,
   spaceBetween: 15,
   loop: true,
   loopFillGroupWithBlank: true,
@@ -26,52 +26,12 @@ let options = {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-};
-
-// POPULAR SECTION SWIPER FOR MOBILE //
-
-if (window.innerWidth < 767 && window.innerWidth > 375) {
-  options.slidesPerView = 2;
-  var swiper = new Swiper('.mySwiper-mob', options);
-}
-
-let widthMatchMobile = window.matchMedia('(min-width: 375px) and (max-width: 767px)');
-widthMatchMobile.addEventListener('change', onWidthChangeMobile);
-function onWidthChangeMobile(evt) {
-  if (evt.matches) {
-    options.slidesPerView = 2;
-    var swiper = new Swiper('.mySwiper-mob', options);
-  }
-}
-
-// POPULAR SECTION SWIPER FOR TABLET //
-
-if (window.innerWidth < 1439 && window.innerWidth > 768) {
-  options.slidesPerView = 3;
-  var swiper = new Swiper('.mySwiper-mob', options);
-}
-
-let widthMatchTablet = window.matchMedia('(min-width: 768px) and (max-width: 1439px)');
-widthMatchTablet.addEventListener('change', onWidthChangeTablet);
-function onWidthChangeTablet(evt) {
-  if (evt.matches) {
-    options.slidesPerView = 3;
-    var swiper = new Swiper('.mySwiper-mob', options);
-  }
-}
-
-// POPULAR SECTION SWIPER FOR DESKTOP //
-
-if (window.innerWidth > 1439) {
-  options.slidesPerView = 4;
-  var swiper = new Swiper('.mySwiper-mob', options);
-}
-
-let widthMatchDesktop = window.matchMedia('(min-width: 1440px)');
-widthMatchDesktop.addEventListener('change', onWidthChangeDesktop);
-function onWidthChangeDesktop(evt) {
-  if (evt.matches) {
-    options.slidesPerView = 4;
-    var swiper = new Swiper('.mySwiper-mob', options);
-  }
-}
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 4,
+    },
+  },
+});
